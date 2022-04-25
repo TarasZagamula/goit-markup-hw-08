@@ -1,0 +1,48 @@
+.progect-title {
+    font-family: var(--first-font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.progects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.progect-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.progect-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: var(--second-content-color);
+    border-radius: 4px;
+    border: solid 1px;
+    transition:
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+.progect-svg {
+    fill: currentColor;
+
+    .progect-link:hover &,
+    .progect-link:focus & {
+        color: var(--accent-color);
+    }
+}

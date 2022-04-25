@@ -1,0 +1,37 @@
+.soc-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--second-content-color);
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background: var(--accent-color);
+        }
+}
+
+.soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.soc-svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+
+    .soc-link:hover &,
+    .soc-link:focus & {
+        color: #ffffff;
+    }
+}

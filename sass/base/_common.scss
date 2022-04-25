@@ -1,0 +1,65 @@
+:root {
+    --accent-color: #2196f3;
+    --title-color: #212121;
+    --content-color: #757575;
+    --second-content-color: #AFB1B8;
+    --bg-color: #2f303a;
+    --bg-btn-color-portfolio: #f5f4fa;
+    --second-title-color: #ffffff;
+    --first-font-family: "Roboto", sans-serif;
+    --second-font-family: "Raleway", sans-serif;
+}
+
+body {
+    font-family: var(--first-font-family);
+    color: var(--title-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--first-font-family);
+    color: var(--title-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
