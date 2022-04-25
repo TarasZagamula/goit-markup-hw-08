@@ -1,7 +1,9 @@
 header {
     border-bottom: 1px solid #ECECEC;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    height: 80px;
+    width: 100%;
+   // padding-top: 32px;
+    // padding-bottom: 32px;
 }
 
 .header-container {
@@ -48,6 +50,8 @@ header {
 
         &.current {
             color: var(--accent-color);
+            border-bottom: 4px solid var(--accent-color);
+            border-radius: 2px;
         }
 }
 
