@@ -1,0 +1,5 @@
+@mixin display($display, $ai, $jc){
+    display: $display;
+    align-items: $ai;
+    justify-content: $jc;
+}
