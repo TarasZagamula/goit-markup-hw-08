@@ -3,23 +3,46 @@
     padding-bottom: 200px;
     background: var(--bg-color);
     text-align: center;
-    background-image: linear-gradient(to right,
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../image/background-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    @media screen and (min-width: 768px) {
+                background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../image/background-tablet.jpg);
+                // background-repeat: no-repeat;
+                // background-position: center;
+                // background-size: cover;
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../image/background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+    }
 }
 
 .top-caption {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--second-title-color);
+
+    @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    }  
 }
 
 .modal-button-hero {
