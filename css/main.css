@@ -60,8 +60,15 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -623,22 +630,54 @@ header {
 }
 
 .specificity-list {
-  display: flex;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .specificity-list {
+    display: flex;
+  }
 }
 
 .specificity-list-item {
-  width: 270px;
+  width: 100%;
 }
 
 .specificity-list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .specificity-list-item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .specificity-list-item {
+    width: 350px;
+  }
+  .specificity-list-item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .specificity-list-item {
+    width: 270px;
+  }
+  .specificity-list-item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 /* specifity-dekoration */
 .spc-div {
   display: flex;
   height: 120px;
-  width: 270px;
+  width: 100%;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   justify-content: center;

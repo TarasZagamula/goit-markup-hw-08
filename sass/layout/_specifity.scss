@@ -3,15 +3,41 @@
 }
 
 .specificity-list {
-    display: flex;
+    display: block;
+    @media screen and (min-width: 768px) {
+    display: flex;    
+    }
 }
 
 .specificity-list-item {
-    width: 270px;
+    width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+    width: 350px;
 
     &:not(:last-child) {
         margin-right: 30px;
+        margin-bottom: 30px;
     }
+
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        
+        &:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+
 }
 
 
@@ -20,7 +46,7 @@
 .spc-div {
     display: flex;
     height: 120px;
-    width: 270px;
+    width: 100%;
     background-color: #f5f4fa;
     margin-bottom: 30px;
     justify-content: center;
