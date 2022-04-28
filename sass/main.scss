@@ -6,23 +6,22 @@
 @import './components/soc-link';
 
 @import './mixins/fonts';
-@import './mixins/flex-center';
 
-@import './window/mobile-menu';
+@import './mobile/menu-window';
 
 @import './components/header';
-// @import './components/footer';
+@import './components/footer';
 
-// @import './utils/visually-hiden';
+@import './utils/visually-hiden';
 
-// @import './components/selection-btn';
+@import './components/selection-btn';
 
-// @import './/layout/hero';
-// @import './layout/about';
-// @import './layout/specifity';
-// @import './layout/team';
-// @import './layout/progect';
+@import './/layout/hero';
+@import './layout/about';
+@import './layout/specifity';
+@import './layout/team';
+@import './layout/progect';
 
-// @import './layout/portfolio';
+@import './layout/portfolio';
 
-// @import './layout/modal-window';
+@import './layout/modal-window';
