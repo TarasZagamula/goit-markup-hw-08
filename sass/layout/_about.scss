@@ -1,4 +1,11 @@
 .about-section {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  
+.about-section {
+    display: block;
     padding-top: 0;
 }
 
@@ -6,18 +13,6 @@
     display: flex;
     justify-content: center;
 }
-
-.about-caption {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-
-    color: var(--title-color);
-}
-
 
 .about-list-item {
   position: relative;
@@ -44,4 +39,5 @@
   position: absolute;
   bottom: 0%;
   right: 0%;
+}
 }

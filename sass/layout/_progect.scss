@@ -1,23 +1,21 @@
-.progect-title {
-    font-family: var(--first-font-family);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
 
 .progects {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-bottom: -30px;
+    margin-right: -30px;
 }
 
-.progect-item:not(:last-child) {
+.progect-item {
+    margin-bottom: 30px;
     margin-right: 30px;
-}
 
+        @media screen and (min-width: 1200px) {
+         margin-bottom: 0;
+        }
+    }
 .progect-link {
     display: flex;
     justify-content: center;
