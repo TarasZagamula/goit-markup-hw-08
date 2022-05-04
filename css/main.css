@@ -1019,14 +1019,26 @@ header {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
   margin-bottom: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    margin-right: -30px;
+  }
+}
+
 .portfolio-list-item {
-  margin-right: 30px;
   margin-bottom: 30px;
-  /* border-radius: 4px; */
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list-item {
+    margin-right: 30px;
+  }
+  .portfolio-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .portfolio-text-box {
@@ -1099,14 +1111,20 @@ header {
 
 .modal {
   display: block;
+  width: 100%;
   padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 370px;
   background: #FFFFFF;
   border-radius: 4px 4px 4px 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1237,6 +1255,13 @@ header {
   letter-spacing: 0.01em;
   color: var(--content-color);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .conditions-box {
+    font-size: 14px;
+    line-height: 2;
+  }
 }
 
 .conditions-link {
