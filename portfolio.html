@@ -19,39 +19,90 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <nav class="nav-bar">
-                <a class="link page-logo page-logo_header" href="./index.html">Web<span
-                        class="page-logo_span_header">Studio</span></a>
-                <ul class="list nav-list">
-                    <li class="nav-list__item">
-                        <a class="link nav-list__link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a class="link nav-list__link current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a class="link nav-list__link" href="./index.html">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="list header-contact">
-                <li class="header-contact__item">
-                    <a class="link contact contacts-mail" href="mailto:info@example.com">
-                        <svg class="contact__svg" width="16px" height="12px">
-                            <use href="./image/symbol-defs.svg#mail"></use>
-                        </svg>info@example.com</a>
+<header class="header">
+    <div class="container header-container">
+        <a class="link page-logo page-logo_header" href="./index.html">Web<span
+                class="page-logo_span_header">Studio</span></a>
+        <nav class="nav-bar">
+            <ul class="list nav-list">
+                <li class="nav-list__item">
+                    <a class="link nav-list__link" href="./index.html">Студия</a>
                 </li>
-                <li class="header-contact__item">
-                    <a class="link contact contacts-tel" href="tel:+380961111111">
-                        <svg class="contact__svg" width="10px" height="16px">
-                            <use href="./image/symbol-defs.svg#tel"></use>
-                        </svg>+38 096 111 11 11</a>
+                <li class="nav-list__item">
+                    <a class="link nav-list__link current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-list__item">
+                    <a class="link nav-list__link" href="./index.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="list header-contact">
+            <li class="header-contact__item">
+                <a class="link contact contacts-mail" href="mailto:info@example.com">
+                    <svg class="contact__svg" width="16px" height="12px">
+                        <use href="./image/symbol-defs.svg#mail"></use>
+                    </svg>info@example.com</a>
+            </li>
+            <li class="header-contact__item">
+                <a class="link contact contacts-tel" href="tel:+380961111111">
+                    <svg class="contact__svg" width="10px" height="16px">
+                        <use href="./image/symbol-defs.svg#tel"></use>
+                    </svg>+38 096 111 11 11</a>
+            </li>
+        </ul>
+        <button type="button" class="button menu-btn" data-menu-open>
+            <svg class="menu-btn__icon" width="40px" height="40px">
+                <use href="./image/symbol-defs.svg#menu-icon"></use>
+            </svg>
+        </button>
+    </div>
+    <!-- ==============================MOBILE-MENU-START=========================== -->
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <button type="button" class="buttuo mobile-menu__slose-btn" data-menu-close>
+                <svg class="mobile-menu__icon" width="40px" height="40px">
+                    <use href="./image/symbol-defs.svg#close-mobile"></use>
+                </svg>
+            </button>
+            <ul class="list mobile-menu__list">
+                <li class="mobile-menu__list-item">
+                    <a href="./index.html" class="link mobile-menu__link current">Студия</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a href="./portfolio.html" class="link mobile-menu__link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a href="" class="link mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+            <ul class="list mobile-menu__contact">
+                <li class="mobile-menu__contact_item">
+                    <a class="link mobile-menu__contact_link" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contact_item">
+                    <a class="link mobile-menu__contact_link_mail" href="mailto:info@example.com">
+                        info@example.com</a>
+                </li>
+            </ul>
+            <ul class="list mobile-menu__soc-bar">
+                <li class="mobile-menu__soc-bar-item">
+                    <a href="" class="link mobile-menu__soc-bar-link">twitter</a>
+                </li>
+                <li class="mobile-menu__soc-bar-item">
+                    <a href="" class="link mobile-menu__soc-bar-link">facebook</a>
+                </li>
+                <li class="mobile-menu__soc-bar-item">
+                    <a href="" class="link mobile-menu__soc-bar-link">linkedin</a>
+                </li>
+                <li class="mobile-menu__soc-bar-item">
+                    <a href="" class="link mobile-menu__soc-bar-link">instagram</a>
                 </li>
             </ul>
         </div>
-    </header>
+    </div>
+    <!-- ==============================MOBILE-MENU-END=========================== -->
+</header>
    <main>
        <section class="section">
 <div class="container container-bar">
@@ -170,7 +221,7 @@
    </main>
     <footer class="page-footer">
         <div class="container footer-container">
-            <div class="addres-container">
+            <div class="footer-container__item addres-container">
                 <div class="page-logo_footer-container">
                     <a class="link page-logo_footer page-logo" href="./index.html">Web<span
                             class="page-logo__span_footer">Studio</span></a>
@@ -192,7 +243,7 @@
                     </ul>
                 </address>
             </div>
-            <div>
+            <div class="footer-container__item">
                 <h2 class="social-title">присоединяйтесь</h2>
                 <ul class="list soc-bar">
                     <li class="soc-item"><a href="" class="soc-link soc-link-footer">
@@ -217,18 +268,19 @@
                         </a></li>
                 </ul>
             </div>
-                <div class="subscribe-box">
-                    <h2 class="social-title">Подпишитесь на рассылку</h2>
-                    <form class="subscribe-form">
-                            <input type="email" class="subscribe-input" placeholder="E-mail" required>
-                            <button type="submit" class="modal-button modal-button-subscribe">Подписаться
-                                <svg class="subscribe-svg" width="24px" height="24px">
-                                    <use href="./image/symbol-defs.svg#send"></use>
-                                </svg>
-                            </button>
-                    </form>
-                </div>
+            <div class="footer-container__item subscribe-box">
+                <h2 class="social-title">Подпишитесь на рассылку</h2>
+                <form class="subscribe-form">
+                    <input type="email" class="subscribe-input" placeholder="E-mail" required>
+                    <button type="submit" class="modal-button modal-button-subscribe">Подписаться
+                        <svg class="subscribe-svg" width="24px" height="24px">
+                            <use href="./image/symbol-defs.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
-    </footer> 
+    </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
