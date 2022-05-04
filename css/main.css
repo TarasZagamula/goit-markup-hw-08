@@ -940,7 +940,6 @@ header {
 .progect-item {
   margin-bottom: 30px;
   margin-right: 30px;
-  width: 150px;
 }
 
 @media screen and (min-width: 480px) {
@@ -959,6 +958,12 @@ header {
   .progect-item {
     margin-bottom: 0;
     width: 170px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .progect-item {
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
