@@ -761,21 +761,22 @@ header {
 }
 
 .specificity-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin-right: -30px;
   margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
   .specificity-list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
 .specificity-list-item {
   width: 100%;
-  margin-right: 0;
 }
 
 .specificity-list-item:not(:last-child) {
@@ -792,9 +793,11 @@ header {
   .specificity-list-item {
     width: 354px;
   }
-  .specificity-list-item:not(:last-child) {
+  .specificity-list-item:nth-child(2n + 1) {
     margin-right: 30px;
-    margin-bottom: 30px;
+  }
+  .specificity-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
