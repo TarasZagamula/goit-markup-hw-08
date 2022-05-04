@@ -540,8 +540,10 @@ header {
 }
 
 /* =============SUBSCRIBE-INPUT============= */
-.subscribe-box {
-  width: 100%;
+@media screen and (max-width: 480px) {
+  .subscribe-box {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -773,6 +775,7 @@ header {
 
 .specificity-list-item {
   width: 100%;
+  margin-right: 0;
 }
 
 .specificity-list-item:not(:last-child) {
