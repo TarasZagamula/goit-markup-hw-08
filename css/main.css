@@ -934,7 +934,12 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: -30px;
-  margin-right: -30px;
+}
+
+@media screen and (min-width: 480px) {
+  .progects {
+    margin-right: -30px;
+  }
 }
 
 .progect-item {
@@ -964,6 +969,9 @@ header {
 @media screen and (max-width: 479px) {
   .progect-item {
     flex-basis: calc((100% - 60px) / 2);
+  }
+  .progect-item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
