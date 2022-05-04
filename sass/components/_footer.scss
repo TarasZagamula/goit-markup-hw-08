@@ -150,9 +150,13 @@
     letter-spacing: 0.03em;
     color: var(--second-title-color);
 
-    // @media screen and (min-width: 480px) {
-    // width: 358px;
-    // }
+    @media screen and (min-width: 480px) {
+    width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 
     @media screen and (max-width: 768px) {
     margin-bottom: 20px;    
