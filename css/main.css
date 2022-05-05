@@ -1132,7 +1132,7 @@ header {
 .modal {
   display: block;
   width: 100%;
-  padding: calc(10% \ 2);
+  padding: calc(10% / 2);
   position: absolute;
   top: 50%;
   left: 50%;
