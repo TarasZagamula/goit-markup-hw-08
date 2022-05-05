@@ -215,6 +215,7 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 2;
 }
 
 .mobile-menu__slose-btn {
@@ -848,7 +849,14 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .specificity-list-caption {
+    text-align: start;
+  }
 }
 
 .specificity-content {
@@ -1112,7 +1120,7 @@ header {
 .modal {
   display: block;
   width: 100%;
-  padding: 40px;
+  padding: calc(17.77 \ 2);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1123,6 +1131,7 @@ header {
 
 @media screen and (min-width: 480px) {
   .modal {
+    padding: 40px;
     width: 450px;
   }
 }
