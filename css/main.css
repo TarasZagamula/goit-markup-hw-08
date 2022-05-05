@@ -661,7 +661,19 @@ header {
 }
 
 .container-bar {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-bar {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-bar {
+    padding-bottom: 56px;
+  }
 }
 
 .btn-bar {
