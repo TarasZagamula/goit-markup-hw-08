@@ -8,6 +8,7 @@
   --second-title-color: #ffffff;
   --first-font-family: "Roboto", sans-serif;
   --second-font-family: "Raleway", sans-serif;
+  --card-set-gap: 30px;
 }
 
 body {
@@ -1039,25 +1040,29 @@ header {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-list {
-    margin-right: -30px;
+    margin-left: calc(-1 * var(--card-set-gap));
   }
 }
 
 .portfolio-list-item {
-  margin-bottom: 30px;
+  margin-top: var(--card-set-gap);
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-list-item {
-    margin-right: 30px;
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
   }
-  .portfolio-list-item:nth-child(2n) {
-    margin-right: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
   }
 }
 
@@ -1132,7 +1137,7 @@ header {
 .modal {
   display: block;
   width: 100%;
-  padding: calc(10% / 2);
+  padding: calc(17.77% / 2);
   position: absolute;
   top: 50%;
   left: 50%;

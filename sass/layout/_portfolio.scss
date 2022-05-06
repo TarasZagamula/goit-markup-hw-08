@@ -18,21 +18,22 @@
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    margin-top: calc(-1 * var(--card-set-gap));
 
     @media screen and (min-width: 768px) {
-     margin-right: -30px;
+     margin-left: calc(-1 * var(--card-set-gap));
     }
 }
 
 .portfolio-list-item {
-    margin-bottom: 30px;
+    margin-top: var(--card-set-gap);
 
     @media screen and (min-width: 768px) {
-        margin-right: 30px;
-        &:nth-child(2n) {
-            margin-right: 0;
-        }
+        flex-basis: calc(100% / 2 - var(--card-set-gap));
+        margin-left: var(--card-set-gap);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - var(--card-set-gap));
     }
 }
 
