@@ -37,6 +37,11 @@
     }
 }
 
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+.portfolio-list-item:first-child .portfolio-link .portfolio-text-box {
+        padding-bottom: 56px;}
+    }
+
 
 .portfolio-text-box {
     padding-top: 20px;
